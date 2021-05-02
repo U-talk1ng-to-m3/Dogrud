@@ -1,7 +1,7 @@
 -  Hi, I’m Doğukan
 -  I’m interested in software
--  I’m currently learning c and phyton programming.
--  My instagram account is dogukandogru_
+-  I’m mail account is dogukandogru06@gmail.com
+-  
 
 <!---
 Dogrud/Dogrud is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
