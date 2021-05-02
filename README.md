@@ -1,6 +1,6 @@
 -  Hi, I’m Doğukan
 -  I’m interested in software
--  I’m mail account is dogukandogru06@gmail.com
+-  My mail account is dogukandogru06@gmail.com
 -  
 
 <!---
