@@ -1,0 +1,50 @@
+# quiz 1 
+# soru 1
+sayi=input("bir sayi  giriniz:")
+sayi=int(sayi)
+if sayi % 2==0:
+    print("girdiginiz sayi cifttir.")
+else:
+    print("girdiginiz sayi tektir.") 
+
+#soru  2
+for toplam in range(0,6):
+ sayi=int(input("Sayıyı Girin : "))
+ if sayi > 1:
+ 
+   for i in range(2,sayi):
+       if (sayi % i) == 0:
+           print(sayi," Asal Sayı Değildir.")
+           break
+   else:
+       print(sayi," Asal Sayıdır.")
+ 
+ else:
+   print(sayi," Asal Sayı Değildir.")
+
+
+#soru 3
+def temiz_veri(): 
+ ilk_string="Ahme4t"
+ ikinci_string="M9eHm4eT"
+ ucuncu_string="hA3k5a1n"
+ ilk_string=ilk_string.lower()
+ ikinci_string=ikinci_string.lower()
+ ucuncu_string=ucuncu_string.lower()
+ ilk_string=ilk_string.capitalize()
+ ikinci_string=ikinci_string.capitalize()
+ ucuncu_string=ucuncu_string.capitalize()
+ ilk_string=ilk_string.replace('4','')
+ ikinci_string=ikinci_string.replace('9','')
+ ikinci_string=ikinci_string.replace('4','')
+ ucuncu_string=ucuncu_string.replace('3','')
+ ucuncu_string=ucuncu_string.replace('5','')
+ ucuncu_string=ucuncu_string.replace('1','')
+ liste=[ilk_string,ikinci_string,ucuncu_string]
+ Birlesmis_deger=liste[0]
+ Birlesmis_deger=Birlesmis_deger+"-"
+ Birlesmis_deger=Birlesmis_deger+liste[1]
+ Birlesmis_deger=Birlesmis_deger+"-"
+ Birlesmis_deger=Birlesmis_deger+liste[2]
+ return Birlesmis_deger
+print(temiz_veri())
