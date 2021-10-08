@@ -1,0 +1,45 @@
+    #include <stdio.h>
+    #include <stdlib.h>
+
+struct kayit{
+int ogrNo;
+int dersKodu;
+int puan;
+}ogrenci[50];
+
+
+//index dosyasi olustur
+
+void kayitEkle(struct kayit ad){
+    FILE *ptr1;
+    ptr1=fopen("trying.bin","ab");
+    fprintf(ptr1,"%d,%d,%d ",ad.dersKodu,ad.ogrNo,ad.puan);
+    fclose(ptr1);
+}
+
+//kayıtbul
+
+//
+
+
+
+
+    int main()
+    {
+FILE *ptr,*ptr2;
+int a1,a2,a3;
+ptr=fopen("trying.bin","wb");
+fclose(ptr);
+for (int i=0;i<50;i++){
+printf("%d. ogrencinin tane sayi giriniz:");
+scanf("%d%d%d",&ogrenci[i].dersKodu,&ogrenci[i].ogrNo,&ogrenci[i].puan);
+printf("girdiginiz notlar\n%d %d %d\n",ogrenci[i].dersKodu,ogrenci[i].ogrNo,ogrenci[i].puan);
+kayitEkle(ogrenci[i]);}
+ptr2=fopen("trying.bin","rb");
+fscanf(ptr2,"%d,%d,%d",&a1,&a2,&a3);
+printf("\ndosyadaki degiskenler %d %d %d lardir.",a1,a2,a3);
+
+
+
+        return 0;
+    }
